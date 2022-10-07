@@ -1,0 +1,154 @@
+@font-face {
+  font-family: poppins-regular;
+  src: url("./fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: poppins-normal;
+  src: url("./fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: poppins-light;
+  src: url("./fonts/Poppins-Light.ttf");
+}
+
+
+body{
+background: #F2F2F2;
+}
+
+#header {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+#header .regular-header {
+  font-family: poppins-light;
+  font-weight: 275;
+  font-size: 24px;
+  line-height: 36px;
+  color: #4D4F62;
+  margin-bottom: 0px;
+  margin-top: 80px;
+}
+
+#header .bold-header {
+  font-family: poppins-regular;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #4D4F62;
+  margin-top: 0px;
+}
+
+#header p {
+  font-family: poppins-normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #4D4F62;
+  opacity: 0.5;
+  max-width: 540px;
+  margin: auto;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  height: 970px;
+
+}
+
+#main .supervisor, 
+#main .team-builder, 
+#main .karma, #main .calculator  {
+  background: white;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-radius: 8px;
+  width: 90%;
+  max-width: 311px;
+  height: 195px;
+  margin: auto;
+  padding-top: 27px;
+
+}
+
+#main h2 {
+  font-family: poppins-normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #4D4F62;
+  margin-top: 0px;
+  margin-left: 28px;
+  margin-bottom: 0px;
+}
+
+#main p {
+  font-family: poppins-regular;
+  font-size: 13px;
+  font-weight: 400;
+  Line-height: 23px;
+  color: #4D4F62;
+  opacity: 0.5;
+  width: 81.6%;
+  max-width: 254px;
+  margin-left: 28px;
+  margin-top: 1px;
+}
+
+#main img {
+  margin-left: 72%;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+#main .supervisor {
+   border-top: 4px solid #44D3D2;
+}
+
+#main .team-builder {
+   border-top: 4px solid #EA5454;
+}
+
+#main .karma {
+   border-top: 4px solid #FCAE4A;
+}
+
+#main .calculator {
+   border-top: 4px solid #549EF2;
+}
+
+#main .wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 90%;
+  max-width: 311px;
+  margin: auto;
+  height: 475px;
+}
+
+#main .wrapper div {
+  width: 100%;
+}
+
+
+@media screen and (min-width: 1025px) {
+  #header .regular-header, #header .bold-header {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  
+  #main {
+    flex-direction: row;
+    width: 1009px;
+    height: 500px;
+    margin: 64px auto;
+  }
+}
